@@ -1,0 +1,14 @@
+nimport { React, Component } from 'react'
+import ReactDOM from 'react-dom'
+import AppContainer from 'containers/AppContainer'
+// import { fetchCurrentUser, fetchOrganisations } from 'libs/axiosRequests.js'
+import routes from 'routes'
+import createStore from 'store/createStore'
+const store = createStore({})
+
+ReactDOM.render(
+  <AppContainer store={store} routes={routes} />,
+  document.getElementById('root')
+)
+
+
